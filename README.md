@@ -1,7 +1,8 @@
 This is export CMake variable to C++ code example. I also use Qt but it is not a main point. In breaf
 1. Inside CMakeLists.txt any project has something like
-`project(CMake_variable_to_code LANGUAGES CXX C DESCRIPTION "export CMake variable to C++ code example" VERSION 1.0.0.0)`
-
+```
+project(CMake_variable_to_code LANGUAGES CXX C DESCRIPTION "export CMake variable to C++ code example" VERSION 1.0.0.0)
+```
 2. Somewhere inside CMakeLists.txt you should add
 ```
 add_compile_definitions(MYPROJECT_NAME=${PROJECT_NAME})
