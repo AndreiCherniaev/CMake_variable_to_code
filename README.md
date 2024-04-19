@@ -29,20 +29,20 @@ git clone https://github.com/AndreiCherniaev/CMake_variable_to_code.git && cd CM
 rm -rf build-host && mkdir build-host/
 cmake -S src/ -B build-host/
 cmake --build build-host/ --parallel
-cpack --config build-host/CPackConfig.cmake -B build-host/
 ```
 
-## Install deb
+## Test
 ```
-sudo dpkg -i build-host/CMake_variable_to_code-1.0.0-Linux.deb
+build-host/CMake_variable_to_code --version
+CMake_variable_to_code 1.0.0.0
 ```
+```
+build-host/CMake_variable_to_code --help
+Usage: build-host/CMake_variable_to_code [options]
+export CMake variable to C++ code example
 
-## Test deb
-```
-CMake_variable_to_code-1.0.0-Linux
-```
-
-## Remove deb
-```
-sudo dpkg -r CMake_variable_to_code
+Options:
+  -h, --help     Displays help on commandline options.
+  --help-all     Displays help, including generic Qt options.
+  -v, --version  Displays version information.
 ```
