@@ -48,3 +48,28 @@ Options:
   --help-all     Displays help, including generic Qt options.
   -v, --version  Displays version information.
 ```
+
+# configure_file way
+## Compiling
+```
+cd "CMake_variable_to_code/configure_file_way"
+rm -rf build-host && mkdir build-host/
+cmake -S src/ -B build-host/
+cmake --build build-host/ --parallel
+```
+
+## Test
+```
+build-host/CMake_variable_to_code --version
+CMake_variable_to_code 1.0.0.0
+```
+```
+build-host/CMake_variable_to_code --help
+Usage: build-host/CMake_variable_to_code [options]
+export CMake variable to C++ code example
+
+Options:
+  -h, --help     Displays help on commandline options.
+  --help-all     Displays help, including generic Qt options.
+  -v, --version  Displays version information.
+```
