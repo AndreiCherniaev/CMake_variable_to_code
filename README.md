@@ -1,4 +1,5 @@
-This is export CMake variable to C++ code example. I also use Qt but it is not a main point. In breaf
+This is export CMake variable to C++ code example. I also use Qt but it is not a main point. There are two ways: use [add_compile_definitions](https://cmake.org/cmake/help/latest/command/add_compile_definitions.html) or use [configure_file](https://cmake.org/cmake/help/latest/guide/tutorial/A%20Basic%20Starting%20Point.html#exercise-3-adding-a-version-number-and-configured-header-file).
+# add_compile_definitions way
 1. Inside CMakeLists.txt any project has something like
 ```
 project(CMake_variable_to_code LANGUAGES CXX C DESCRIPTION "export CMake variable to C++ code example" VERSION 1.0.0.0)
@@ -26,7 +27,7 @@ See also my feature [request](https://bugreports.qt.io/browse/QTBUG-123649) for 
 
 ## Compiling
 ```
-git clone https://github.com/AndreiCherniaev/CMake_variable_to_code.git && cd CMake_variable_to_code
+git clone https://github.com/AndreiCherniaev/CMake_variable_to_code.git && cd "CMake_variable_to_code/add_compile_definitions_way"
 rm -rf build-host && mkdir build-host/
 cmake -S src/ -B build-host/
 cmake --build build-host/ --parallel
