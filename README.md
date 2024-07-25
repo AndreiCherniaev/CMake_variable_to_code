@@ -1,4 +1,4 @@
-This is export CMake variable to C++ code example. I also use Qt but it is not a main point. There are two ways: use [add_compile_definitions](https://cmake.org/cmake/help/latest/command/add_compile_definitions.html) or use [configure_file](https://cmake.org/cmake/help/latest/guide/tutorial/A%20Basic%20Starting%20Point.html#exercise-3-adding-a-version-number-and-configured-header-file).
+This is export CMake variable to C++ code example. I also use Qt but it is not a main point. There are two ways: use [add_compile_definitions](https://cmake.org/cmake/help/latest/command/add_compile_definitions.html) or use [configure_file](https://cmake.org/cmake/help/latest/guide/tutorial/A%20Basic%20Starting%20Point.html#exercise-3-adding-a-version-number-and-configured-header-file) (better).
 # add_compile_definitions way
 1. Inside CMakeLists.txt any project has something like
 ```
